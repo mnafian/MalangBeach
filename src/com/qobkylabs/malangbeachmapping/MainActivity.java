@@ -33,12 +33,14 @@ public class MainActivity extends SherlockFragmentActivity {
 
 		mTabsAdapter = new TabsAdapter(this, mViewPager);
 
-		mTabsAdapter.addTab(bar.newTab().setText("Wisata Pantai"),
-				FragmentTab1.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Perkebunan"),
-				FragmentTab2.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Wisata Coban"),
-				FragmentTab3.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Pantai"),
+				FragmentPantai.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Coban"),
+				FragmentCoban.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Pemandian"),
+				FragmentPemandian.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Candi"),
+				FragmentCandi.class, null);
 
 	}
 
