@@ -1,8 +1,10 @@
-package com.qobkylabs.malangbeachmapping;
+package com.qonkylabs.malangbeachmapping;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import com.qobkylabs.malangbeachmapping.R;
 
 import android.app.ListActivity;
 import android.os.Bundle;

@@ -1,4 +1,6 @@
-package com.qobkylabs.malangbeachmapping;
+package com.qonkylabs.malangbeachmapping;
+
+import com.qobkylabs.malangbeachmapping.R;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -29,7 +31,7 @@ public class Launcher extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.start:
-			Intent in = new Intent(Launcher.this, MainActivity.class);
+			Intent in = new Intent(Launcher.this, MenuUtama.class);
 			startActivity(in);
 			break;
 		case R.id.tentang:

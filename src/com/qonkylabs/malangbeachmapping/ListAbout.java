@@ -1,4 +1,4 @@
-package com.qobkylabs.malangbeachmapping;
+package com.qonkylabs.malangbeachmapping;
 
 public class ListAbout {
 	String judul, info;

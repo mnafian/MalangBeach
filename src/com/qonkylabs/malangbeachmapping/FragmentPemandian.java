@@ -1,10 +1,11 @@
-package com.qobkylabs.malangbeachmapping;
+package com.qonkylabs.malangbeachmapping;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.actionbarsherlock.app.SherlockFragment;
+import com.qobkylabs.malangbeachmapping.R;
  
 public class FragmentPemandian extends SherlockFragment {
     @Override

@@ -34,7 +34,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.qobkylabs.malangbeachmapping.Launcher"
+            android:name="com.qonkylabs.malangbeachmapping.Launcher"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,26 +43,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.qobkylabs.malangbeachmapping.MainActivity"
+            android:name="com.qonkylabs.malangbeachmapping.MenuUtama"
             android:label="@string/app_name" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.qobkylabs.malangbeachmapping.Maps"
+            android:name="com.qonkylabs.malangbeachmapping.Maps"
             android:label="@string/app_name" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.qobkylabs.malangbeachmapping.About"
+            android:name="com.qonkylabs.malangbeachmapping.About"
             android:label="@string/about" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.qonkylabs.malangbeachmapping.MapsMenu" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qonkylabs.malangbeachmapping.FragmentDetail" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
 
         <!-- Goolge Maps API Key -->
         <meta-data

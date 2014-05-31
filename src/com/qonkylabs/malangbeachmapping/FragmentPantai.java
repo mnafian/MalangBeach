@@ -1,4 +1,4 @@
-package com.qobkylabs.malangbeachmapping;
+package com.qonkylabs.malangbeachmapping;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +14,7 @@ import android.widget.SimpleAdapter;
 
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.qobkylabs.malangbeachmapping.R;
 
 public class FragmentPantai extends SherlockListFragment {
 	ListView list;
@@ -55,36 +56,41 @@ public class FragmentPantai extends SherlockListFragment {
 		case 0:
 			posisi = new LatLng(-8.447159, 112.651799);
 			args.putParcelable("place_position", posisi);
-			a = new Intent(getActivity(), Maps.class);
+			a = new Intent(getActivity(), MapsMenu.class);
 			a.putExtra("lat", args);
+			a.putExtra("pos", "goa");
 			a.putExtra("lokasi", "Pantai Goa Cina Malang Selatan");
 			break;
 		case 1:
 			posisi = new LatLng(-8.431354, 112.686206);
 			args.putParcelable("place_position", posisi);
-			a = new Intent(getActivity(), Maps.class);
+			a = new Intent(getActivity(), MapsMenu.class);
 			a.putExtra("lat", args);
+			a.putExtra("pos", "send");
 			a.putExtra("lokasi", "Pantai Sendang Biru & Akses Ke Pulau Sempu");
 			break;
 		case 2:
 			posisi = new LatLng(-8.443069, 112.664548);
 			args.putParcelable("place_position", posisi);
-			a = new Intent(getActivity(), Maps.class);
+			a = new Intent(getActivity(), MapsMenu.class);
 			a.putExtra("lat", args);
+			a.putExtra("pos", "clung");
 			a.putExtra("lokasi", "Pantai Clungup");
 			break;
 		case 3:
 			posisi = new LatLng(-8.371426, 112.838349);
 			args.putParcelable("place_position", posisi);
-			a = new Intent(getActivity(), Maps.class);
+			a = new Intent(getActivity(), MapsMenu.class);
 			a.putExtra("lat", args);
+			a.putExtra("pos", "leng");
 			a.putExtra("lokasi", "Pantai Lenggoksono, Tirtoyudo");
 			break;
 		case 4:
 			posisi = new LatLng(-8.433449, 112.638965);
 			args.putParcelable("place_position", posisi);
-			a = new Intent(getActivity(), Maps.class);
+			a = new Intent(getActivity(), MapsMenu.class);
 			a.putExtra("lat", args);
+			a.putExtra("pos", "baj");
 			a.putExtra("lokasi", "Pantai Bajulmati, Gedangan");
 			break;
 		}

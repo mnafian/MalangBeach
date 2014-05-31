@@ -1,4 +1,4 @@
-package com.qobkylabs.malangbeachmapping;
+package com.qonkylabs.malangbeachmapping;
 
 import java.util.ArrayList;
 
@@ -11,19 +11,21 @@ import android.support.v4.view.ViewPager;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.app.ActionBar.Tab;
+import com.qobkylabs.malangbeachmapping.R;
 
-public class MainActivity extends SherlockFragmentActivity {
+public class MapsMenu extends SherlockFragmentActivity {
 	ViewPager mViewPager;
 	TabsAdapter mTabsAdapter;
 	TextView tabCenter;
 	TextView tabText;
 
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-
+		setTitle("Lokasi Wisata");
 		mViewPager = new ViewPager(this);
 		mViewPager.setId(R.id.pager);
 
@@ -33,14 +35,10 @@ public class MainActivity extends SherlockFragmentActivity {
 
 		mTabsAdapter = new TabsAdapter(this, mViewPager);
 
-		mTabsAdapter.addTab(bar.newTab().setText("Pantai"),
-				FragmentPantai.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Coban"),
-				FragmentCoban.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Pemandian"),
-				FragmentPemandian.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Candi"),
-				FragmentCandi.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Detail Lokasi"),
+				FragmentDetail.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Peta Lokasi"), Maps.class,
+				null);
 
 	}
 
@@ -117,5 +115,4 @@ public class MainActivity extends SherlockFragmentActivity {
 		public void onTabReselected(Tab tab, FragmentTransaction ft) {
 		}
 	}
-
 }

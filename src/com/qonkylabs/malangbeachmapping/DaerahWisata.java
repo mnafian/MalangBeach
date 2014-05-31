@@ -1,4 +1,6 @@
-package com.qobkylabs.malangbeachmapping;
+package com.qonkylabs.malangbeachmapping;
+
+import com.qobkylabs.malangbeachmapping.R;
 
 public class DaerahWisata {
 
