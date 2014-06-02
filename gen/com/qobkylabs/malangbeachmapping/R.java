@@ -1122,14 +1122,15 @@ containing a value of this type.
         public static final int ic_plusone_tall_off_client=0x7f020098;
         public static final int image_bg=0x7f020099;
         public static final int list_selector=0x7f02009a;
-        public static final int logo=0x7f02009b;
-        public static final int pantaibajulmati=0x7f02009c;
-        public static final int pantaibalekambang=0x7f02009d;
-        public static final int pantaiclungup=0x7f02009e;
-        public static final int pantaigoacina=0x7f02009f;
-        public static final int pantailenggoksono=0x7f0200a0;
-        public static final int pantaisendangbiru=0x7f0200a1;
-        public static final int style_button=0x7f0200a2;
+        public static final int loader=0x7f02009b;
+        public static final int logo=0x7f02009c;
+        public static final int pantaibajulmati=0x7f02009d;
+        public static final int pantaibalekambang=0x7f02009e;
+        public static final int pantaiclungup=0x7f02009f;
+        public static final int pantaigoacina=0x7f0200a0;
+        public static final int pantailenggoksono=0x7f0200a1;
+        public static final int pantaisendangbiru=0x7f0200a2;
+        public static final int style_button=0x7f0200a3;
     }
     public static final class id {
         public static final int NamaLokasi=0x7f05003d;
@@ -1172,10 +1173,11 @@ containing a value of this type.
         public static final int abs__textButton=0x7f05001a;
         public static final int abs__title=0x7f050022;
         public static final int abs__up=0x7f05000f;
-        public static final int action_settings=0x7f05004b;
-        public static final int deskripsi=0x7f050045;
+        public static final int action_settings=0x7f05004c;
+        public static final int arrow=0x7f05003c;
+        public static final int deskripsi=0x7f050046;
         public static final int deskripsi_cb=0x7f050043;
-        public static final int detailImage=0x7f050046;
+        public static final int detailImage=0x7f050047;
         public static final int detailLayout=0x7f05003a;
         public static final int detailLokasi=0x7f05003e;
         public static final int disableHome=0x7f05000d;
@@ -1183,12 +1185,12 @@ containing a value of this type.
         public static final int homeAsUp=0x7f05000a;
         public static final int hybrid=0x7f050004;
         public static final int imageView1=0x7f050014;
-        public static final int info=0x7f05004a;
-        public static final int judul=0x7f050044;
+        public static final int info=0x7f05004b;
+        public static final int judul=0x7f050045;
         public static final int judul_cb=0x7f050042;
-        public static final int judulabs=0x7f050049;
+        public static final int judulabs=0x7f05004a;
         public static final int listMode=0x7f050006;
-        public static final int list_image=0x7f05003c;
+        public static final int list_image=0x7f050044;
         public static final int list_image_cb=0x7f050041;
         public static final int map=0x7f05003f;
         public static final int none=0x7f050000;
@@ -1198,9 +1200,9 @@ containing a value of this type.
         public static final int showCustom=0x7f05000c;
         public static final int showHome=0x7f050009;
         public static final int showTitle=0x7f05000b;
-        public static final int start=0x7f050047;
+        public static final int start=0x7f050048;
         public static final int tabMode=0x7f050007;
-        public static final int tentang=0x7f050048;
+        public static final int tentang=0x7f050049;
         public static final int terrain=0x7f050003;
         public static final int textView1=0x7f050015;
         public static final int textView2=0x7f050016;
@@ -1246,8 +1248,9 @@ containing a value of this type.
         public static final int image_header=0x7f03001d;
         public static final int launcher=0x7f03001e;
         public static final int list_about=0x7f03001f;
-        public static final int sherlock_spinner_dropdown_item=0x7f030020;
-        public static final int sherlock_spinner_item=0x7f030021;
+        public static final int list_activity=0x7f030020;
+        public static final int sherlock_spinner_dropdown_item=0x7f030021;
+        public static final int sherlock_spinner_item=0x7f030022;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;

@@ -2,7 +2,7 @@ package com.qonkylabs.malangbeachmapping;
 
 import com.qobkylabs.malangbeachmapping.R;
 
-public class DaerahWisata {
+public class DaerahWisata{
 
 	static String pantai[] = new String[] { "Pantai Goa Cina",
 			"Pantai Sendang Biru", "Pantai Clungup", "Pantai Lenggoksono",

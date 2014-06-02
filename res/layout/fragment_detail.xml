@@ -21,7 +21,7 @@
             android:padding="5dip" >
 
             <ImageView
-                android:id="@+id/list_image"
+                android:id="@+id/arrow"
                 android:layout_width="15dip"
                 android:layout_height="15dip" 
                 android:src="@drawable/arrow"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/thumbnail"
             android:layout_toRightOf="@+id/thumbnail"
-            android:text="Pantai Sipelot"
+            android:text="Tentang Lokasi"
             android:textColor="#040404"
             android:textSize="18sp"
             android:textStyle="bold"

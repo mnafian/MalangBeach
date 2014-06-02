@@ -16,35 +16,41 @@ import android.widget.SimpleAdapter;
 
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.qobkylabs.malangbeachmapping.R;
+import com.squareup.picasso.Picasso;
 
 public class FragmentDetail extends SherlockListFragment {
 	ListView list;
 	List<HashMap<String, String>> aList = new ArrayList<HashMap<String, String>>();
 	ImageView imDetail;
-	String pos;
+	String key, name_l, desc, location, image;
+	public static final String IMAGE_URL = "http://192.168.1.6/android/res/kategori/";
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		Intent in = getActivity().getIntent();
-		pos = (String) in.getStringExtra("pos");
+		key = (String) in.getStringExtra("key");
+		name_l = (String) in.getStringExtra("name_l");
+		image = (String) in.getStringExtra("image");
+		desc = (String) in.getStringExtra("desc_d");
+		location = (String) in.getStringExtra("location");
 		return super.onCreateView(inflater, container, savedInstanceState);
 	}
-	
+
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 
-		for (int i = 0; i < DaerahWisata.pantai.length; i++) {
 			HashMap<String, String> hm = new HashMap<String, String>();
-			hm.put("pantai", pos);
-			hm.put("detail", "Lokasi : \r\n" + DaerahWisata.detailp[i]);
+			hm.put("keyword", key);
+			hm.put("nama_lokasi", name_l);
+			hm.put("image_detail", image);
+			hm.put("deskripsi", location+"\r\n"+desc);			
 			aList.add(hm);
-		}
 
-		String[] from = { "pantai", "detail" };
-		int[] to = { R.id.NamaLokasi, R.id.detailLokasi };
+		String[] from = { "nama_lokasi", "deskripsi"};
+		int[] to = { R.id.NamaLokasi, R.id.detailLokasi};
 
 		SimpleAdapter adapter = new SimpleAdapter(getActivity()
 				.getBaseContext(), aList, R.layout.fragment_detail, from, to);
@@ -56,20 +62,10 @@ public class FragmentDetail extends SherlockListFragment {
 		View view = inflater.inflate(R.layout.image_header, null);
 		imDetail = (ImageView) view.findViewById(R.id.detailImage);
 
-		if (pos.equals("goa")) {
-			imDetail.setImageResource(R.drawable.pantaigoacina);
-		} else if (pos.equals("send")) {
-			imDetail.setImageResource(R.drawable.pantaisendangbiru);
-		} else if (pos.equals("clung")) {
-			imDetail.setImageResource(R.drawable.pantaiclungup);
-		} else if (pos.equals("leng")) {
-			imDetail.setImageResource(R.drawable.pantailenggoksono);
-		} else if (pos.equals("baj")) {
-			imDetail.setImageResource(R.drawable.pantaibajulmati);
-		}
+		Picasso.with(getActivity()).load(IMAGE_URL+image)
+				.fit().into(imDetail);
 		list.addHeaderView(view);
 
 		setListAdapter(adapter);
 	}
-
 }
